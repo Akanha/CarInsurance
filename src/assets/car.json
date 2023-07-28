@@ -1,0 +1,43 @@
+{
+  "car": [
+    {
+      "id": 11,
+      "model": "s-class",
+      "brand": "Mercedes",
+      "regNo": "KA01LS1243",
+      "dop": "12/12/2022",
+      "price": 10000000
+    },
+    {
+      "id": 12,
+      "model": "m3",
+      "brand": "BMW",
+      "regNo": "KA01AB1711",
+      "dop": "1/8/2021",
+      "price": 6000000
+    },
+    {
+      "id": 13,
+      "model": "dzire",
+      "brand": "Suzuki",
+      "regNo": "OD02S9052",
+      "dop": "12/12/2022",
+      "price": 800000
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "email": "ashirvadmishra17@gmail.com",
+      "password": "Aka1710"
+    }
+  ],
+  "policy": [
+    {
+      "id": 111,
+      "username": "Akanha",
+      "policyNo": "CRI0001",
+      "regNo": "KA01AB1711"
+    }
+  ]
+}

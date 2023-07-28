@@ -1,0 +1,20 @@
+<h1>list works!</h1>
+<hr>
+<table>
+  <thead>
+    <th>Model</th>
+    <th>Making</th>
+    <th>Regd No</th>
+    <th>Date Of Purchase</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of car">
+      <td>{{c.model}}</td>
+      <td>{{c.making}}</td>
+      <td>{{c.regNo}}</td>
+      <td>{{c.dop}}</td>
+      <td>{{c.price}}</td>
+    </tr>
+  </tbody>
+</table>
