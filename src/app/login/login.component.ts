@@ -20,7 +20,6 @@ export class LoginComponent {
    this.service.validate(this.cred).then(resp => resp.subscribe((data) => {
       this.fetched = data[0];
       console.log(typeof(this.fetched));
-      // localStorage.setItem("detials", data);
        if(this.cred.email == this.fetched.email){
         console.log("aagaya")
         this.router.navigate(['/dashboard'])
