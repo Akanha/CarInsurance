@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Car } from '../car.model';
-import { HttpClient } from '@angular/common/http';
 import { CarService } from '../service/car.service';
 
 @Component({
@@ -12,7 +11,12 @@ export class ListComponent {
   car:Car[]=[]
   constructor(private service:CarService){}
 
+
   ngOnInit():void{
-    this.service.list().subscribe(d=>this.car=d)
+    this.service.list().subscribe(d=> {
+      this.car=d
+      console.log(this.car)
+    })
+
   }
 }
