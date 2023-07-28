@@ -12,23 +12,23 @@ import { repeat, retry } from 'rxjs';
 export class LoginComponent {
   flag = false
   cred:User = new User()
-  fetched:User=new User()
-  got:User=new User();
+  fetched:User = new User();
+
   constructor(private service:AuthService,private router:Router){}
 
   authenticate(){
-   this.service.validate(this.cred).then(resp => resp.subscribe((data : User) => {
-    console.log(data);
-    this.fetched=data
-     if(this.cred.email == data.email){
-      console.log("aagaya")
-      this.router.navigate(['/dashboard'])
-     }
-     else{
-      console.log("nahi aya")
-     }
-   }));
-
-  }
+   this.service.validate(this.cred).then(resp => resp.subscribe((data) => {
+      this.fetched = data[0];
+      console.log(typeof(this.fetched));
+      // localStorage.setItem("detials", data);
+       if(this.cred.email == this.fetched.email){
+        console.log("aagaya")
+        this.router.navigate(['/dashboard'])
+       }
+       else{
+        console.log("nahi aya")
+       }
+  }))
+}
 
 }

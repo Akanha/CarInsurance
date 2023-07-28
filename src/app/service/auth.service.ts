@@ -11,7 +11,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
  async validate(cred: User) {
-    return await this.http.get<User>(
+    return await this.http.get<User[]>(
       AuthService.baseurl +
       '/user?email=' +
       cred.email +
