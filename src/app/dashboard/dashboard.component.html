@@ -1,1 +1,15 @@
-<p>dashboard works!</p>
+<h1>Welcome to Dashboard</h1>
+<table class="table">
+  <thead>
+    <th>Email</th>
+    <th>Car Regd No</th>
+    <th>Policy No</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of details" >
+      <td>{{d.email}}</td>
+      <td>{{d.regNo}}</td>
+      <td>{{d.policyNo}}</td>
+    </tr>
+  </tbody>
+</table>

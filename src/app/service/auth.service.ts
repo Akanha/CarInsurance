@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from '../user.model';
 import { Observable, catchError, delay, filter, repeat, retry } from 'rxjs';
+import { Policy } from '../policy.model';
 
 @Injectable({
   providedIn: 'root',
@@ -22,5 +23,8 @@ export class AuthService {
 
   signUp(details:User){
     this.http.post(AuthService.baseurl+"/user/",details).subscribe(data=>data=details);
+  }
+  list(){
+    return this.http.get<Policy[]>(AuthService.baseurl+"/policy")
   }
 }

@@ -8,8 +8,8 @@ import { ListComponent } from './list/list.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminComponent } from './admin/admin.component';
-import { InterceptInterceptor } from './intercept.interceptor';
 import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,19 +18,14 @@ import { SignupComponent } from './signup/signup.component';
     LoginComponent,
     DashboardComponent,
     AdminComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule
-  ],
-  providers: [{
-    provide:HTTP_INTERCEPTORS,
-    useClass:InterceptInterceptor,
-    multi:true
-  }
   ],
   bootstrap: [AppComponent]
 })
