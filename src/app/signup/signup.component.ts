@@ -12,5 +12,6 @@ export class SignupComponent {
   constructor(private service:AuthService){}
   signup(){
     this.service.signUp(this.cred);
+    alert("user created successfully")
   }
 }

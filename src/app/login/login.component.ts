@@ -24,6 +24,7 @@ export class LoginComponent {
        if(this.cred.email == this.fetched.email){
         console.log("aagaya")
         this.router.navigate(['/dashboard'])
+        alert("Successfully loggedin")
        }
        else{
         this.router.navigate(["/login"])
