@@ -8,12 +8,12 @@ import { Policy } from '../policy.model';
   providedIn: 'root',
 })
 export class AuthService {
-  private static baseurl: string = 'http://localhost:3000';
+  private static baseUrl: string = 'http://localhost:3000';
   constructor(private http: HttpClient) { }
 
  async validate(cred: User) {
     return await this.http.get<User[]>(
-      AuthService.baseurl +
+      AuthService.baseUrl +
       '/user?email=' +
       cred.email +
       '&password=' +
@@ -22,9 +22,9 @@ export class AuthService {
   }
 
   signUp(details:User){
-    this.http.post(AuthService.baseurl+"/user/",details).subscribe(data=>data=details);
+    this.http.post(AuthService.baseUrl+"/user/",details).subscribe(data=>data=details);
   }
   list(){
-    return this.http.get<Policy[]>(AuthService.baseurl+"/policy")
+    return this.http.get<Policy[]>(AuthService.baseUrl+"/policy?email="+localStorage.getItem("email"))
   }
 }

@@ -19,12 +19,14 @@ export class LoginComponent {
   authenticate(){
    this.service.validate(this.cred).then(resp => resp.subscribe((data) => {
       this.fetched = data[0];
+      localStorage.setItem("email",this.cred.email)
       console.log(typeof(this.fetched));
        if(this.cred.email == this.fetched.email){
         console.log("aagaya")
         this.router.navigate(['/dashboard'])
        }
        else{
+        this.router.navigate(["/login"])
         console.log("nahi aya")
        }
   }))

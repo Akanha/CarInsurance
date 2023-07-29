@@ -8,14 +8,14 @@ import { CarService } from '../service/car.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  car:Car[]=[]
+  car:Car=new Car()
   constructor(private service:CarService){}
 
 
   ngOnInit():void{
     this.service.list().subscribe(d=> {
-      this.car=d
-      console.log(this.car)
+      this.car=d[0]
+      // console.log(this.car)
     })
 
   }
