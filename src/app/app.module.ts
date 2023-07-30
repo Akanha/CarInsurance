@@ -10,6 +10,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminComponent } from './admin/admin.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import { PremiumComponent } from './premium/premium.component';
+import { LoginPremiumComponent } from './login-premium/login-premium.component';
+import { PremiumActualComponent } from './premium-actual/premium-actual.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { HomeComponent } from './home/home.component';
     DashboardComponent,
     AdminComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    PremiumComponent,
+    LoginPremiumComponent,
+    PremiumActualComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

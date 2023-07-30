@@ -5,4 +5,5 @@ export class Car {
   regNo: string = "";
   dop: string = "";
   price: number = 0;
+  cc:number=0
 }

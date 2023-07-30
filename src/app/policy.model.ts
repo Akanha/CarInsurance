@@ -1,7 +1,7 @@
 export class Policy {
   id: number = 0;
-  email: string = "";
-  policyNo: string = "";
-  regNo: string = "";
-  claimStatus:string=""
+  email: any = "";
+  policyNo: any = "";
+  regNo: any = "";
+  claimStatus:string="not-filed"
 }

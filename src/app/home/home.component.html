@@ -1,7 +1,7 @@
 <nav style="background-color: gray;">
   <a [routerLink]="['/login']" class="bg-warning btn" style="float: right; margin-left: 2px;" >Login / view policy</a>
   <a [routerLink]="['/claim']" class="bg-warning btn " style="float: right;">claim</a>
-  <h2>kar-it</h2>
+  <h2>Ca₹it</h2>
 </nav>
 
 <div style="margin: auto; border: 1px solid black ; border-radius: 8pt; align-items: center; width: fit-content; padding: 4%;">
@@ -9,7 +9,7 @@
 <form (ngSubmit)="next()" class="was-validated" >
   <fieldset>
     <label>Registration Number
-    <input type="text" name="regNo" [(ngModel)]="reg.regNo" class="form-control">
+    <input type="text" name="regNo" [(ngModel)]="reg.regNo" class="form-control" placeholder="Ex: OD02S9052">
     </label>
   </fieldset>
   <button class="btn btn-warning">Get Competitive Price></button>

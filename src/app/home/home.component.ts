@@ -21,6 +21,7 @@ export class HomeComponent {
       localStorage.setItem("regNo",this.reg.regNo);
       if(this.reg.regNo==this.compare.regNo){
         this.route.navigate(["/list"])
+        // this.route.navigate(["/list/premium"])
       }
       else{
 

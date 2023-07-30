@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Car } from '../car.model';
 import { CarService } from '../service/car.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -9,7 +10,7 @@ import { CarService } from '../service/car.service';
 })
 export class ListComponent {
   car:Car=new Car()
-  constructor(private service:CarService){}
+  constructor(private service:CarService,private route:Router){}
 
 
   ngOnInit():void{
@@ -18,5 +19,9 @@ export class ListComponent {
       // console.log(this.car)
     })
 
+
+  }
+  getPre(){
+    this.route.navigate(['/list/premium'])
   }
 }

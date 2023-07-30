@@ -7,7 +7,7 @@
       "regNo": "KA01LS1243",
       "dop": "12/12/2022",
       "price": 10000000,
-      "cc": 1200
+      "cc": 2300
     },
     {
       "id": 12,
@@ -16,7 +16,7 @@
       "regNo": "KA01AB1711",
       "dop": "1/8/2021",
       "price": 6000000,
-      "cc": 800
+      "cc": 3000
     },
     {
       "id": 13,
@@ -25,7 +25,25 @@
       "regNo": "OD02S9052",
       "dop": "12/12/2022",
       "price": 800000,
-      "cc": 300
+      "cc": 900
+    },
+    {
+      "id": 14,
+      "model": "ghost",
+      "brand": "Rolls-Royce",
+      "regNo": "AP12AB1234",
+      "dop": "12/08/2020",
+      "price": 80000000,
+      "cc": 4500
+    },
+    {
+      "id": 15,
+      "model": "nexon",
+      "brand": "Tata",
+      "regNo": "OD02SA1431",
+      "dop": "10/02/2023",
+      "price": 1400000,
+      "cc": 900
     }
   ],
   "user": [
@@ -65,6 +83,13 @@
       "email": "ashirvadmishra17@gmail.com",
       "policyNo": "CRI0003",
       "regNo": "KA01LS1243",
+      "claimStatus": "not-filed"
+    },
+    {
+      "id": 114,
+      "email": "ten@gmail.com",
+      "policyNo": "CRI6933",
+      "regNo": "AP12AB1234",
       "claimStatus": "not-filed"
     }
   ]
