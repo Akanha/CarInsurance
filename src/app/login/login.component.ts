@@ -18,7 +18,6 @@ export class LoginComponent {
 
   authenticate(){
    this.service.validate(this.cred).then(resp => resp.subscribe((data) => {
-    if(data.length>1){
       this.fetched = data[0];
       localStorage.setItem("email",this.cred.email)
       console.log(typeof(this.fetched));
@@ -28,7 +27,6 @@ export class LoginComponent {
         this.router.navigate(['/dashboard'])
         alert("Successfully loggedin")
        }
-      }
        else{
         alert("Invalid details")
         this.router.navigate(["/login"])
