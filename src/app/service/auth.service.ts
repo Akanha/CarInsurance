@@ -1,8 +1,8 @@
+import { Policy } from './../policy.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from '../user.model';
 import { Observable, catchError, delay, filter, repeat, retry } from 'rxjs';
-import { Policy } from '../policy.model';
 
 @Injectable({
   providedIn: 'root',
@@ -26,5 +26,8 @@ export class AuthService {
   }
   list(){
     return this.http.get<Policy[]>(AuthService.baseUrl+"/policy?email="+localStorage.getItem("email"))
+  }
+  update(id:number,policy:Policy){
+    this.http.put(AuthService.baseUrl+"/Policy/"+id,policy).subscribe(d=>d=policy)
   }
 }

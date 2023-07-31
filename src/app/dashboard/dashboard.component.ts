@@ -1,7 +1,8 @@
+import { AuthService } from './../service/auth.service';
 import { Component } from '@angular/core';
-import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
 import { Policy } from '../policy.model';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,13 +11,22 @@ import { Policy } from '../policy.model';
 })
 export class DashboardComponent {
   details:Policy[]=[]
-  constructor(private service:AuthService,private router:Router){}
+  constructor(private service:AuthService,private router:Router,private http:HttpClient){}
 
-  message(){
-    alert("Filed claim wait for approval")
+  update(id:number,details:Policy){
+    if(details.claimStatus=="claimed"){
+      alert("already claimed")
+    }
+    else{
+    details.claimStatus="filed";
+    this.service.update(id,details)
+    }
   }
+
 
   ngOnInit(){
-    this.service.list().subscribe(d => this.details=d)
+    this.service.list().subscribe((d) => {this.details=d
+    });
   }
+
 }

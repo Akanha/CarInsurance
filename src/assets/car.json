@@ -69,35 +69,35 @@
       "email": "test@gmail.com",
       "policyNo": "CRI0001",
       "regNo": "KA01AB1711",
-      "claimStatus": "not-filed"
+      "claimStatus": "claimed"
     },
     {
       "id": 112,
       "email": "test@gmail.com",
       "policyNo": "CRI0002",
       "regNo": "OD02S9052",
-      "claimStatus": "not-filed"
+      "claimStatus": "filed"
     },
     {
       "id": 113,
       "email": "ashirvadmishra17@gmail.com",
       "policyNo": "CRI0003",
       "regNo": "KA01LS1243",
-      "claimStatus": "not-filed"
+      "claimStatus": "unclaimed"
     },
     {
       "id": 114,
       "email": "ten@gmail.com",
       "policyNo": "CRI6933",
       "regNo": "AP12AB1234",
-      "claimStatus": "not-filed"
+      "claimStatus": "unclaimed"
     },
     {
       "id": 115,
       "email": "ashirvadmishra17@gmail.com",
       "policyNo": "CRI90080",
       "regNo": "OD02SA1431",
-      "claimStatus": "not-filed"
+      "claimStatus": "unclaimed"
     }
   ]
 }

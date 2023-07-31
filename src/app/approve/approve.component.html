@@ -1,1 +1,21 @@
-<p>approve works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Policy No</th>
+      <th>Claim Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let show of claim; " [hidden]="show.claimStatus=='unclaimed'">
+      <td>{{show.email}}</td>
+      <td>{{show.policyNo}}</td>
+      <td>{{show.claimStatus}}</td>
+      <td>
+        <button class="btn btn-success" (click)="approve(show.id,show)">Approve</button>
+        <button class="btn btn-danger" (click)="deny(show.id,show)">Deny</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

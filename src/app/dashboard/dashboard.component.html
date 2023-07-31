@@ -10,13 +10,13 @@
   </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let d of details" >
+    <tr *ngFor="let d of details"  >
       <td>{{d.email}}</td>
       <td>{{d.regNo}}</td>
       <td>{{d.policyNo}}</td>
       <td>{{d.claimStatus}}</td>
       <td>
-        <button class="btn btn-info" (click)="message()">file claim</button>
+        <button class="btn btn-info"  (click)="update(d.id,d)">file claim</button>
       </td>
 
     </tr>

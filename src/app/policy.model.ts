@@ -3,5 +3,5 @@ export class Policy {
   email: any = "";
   policyNo: any = "";
   regNo: any = "";
-  claimStatus:string="not-filed"
+  claimStatus:string="unclaimed"
 }
