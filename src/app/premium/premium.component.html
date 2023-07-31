@@ -1,52 +1,78 @@
+<div style="display: flex; flex-direction: row">
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">1 Year Comprehensive Plan</h5>
 
-    <div style="display: flex; flex-direction: row;">
+      <p class="card-text">
+        The comprehensive car insurance plan is the complete insurance cover
+        that offers coverage for the third party as well as own damage.
+      </p>
 
+      <span>Price ₹ {{ premium1yr }} (including GST)</span>
 
+      <!-- <input type="hidden" [(ngModel)]=""> -->
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">1 year Comprehensive Price</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span>price :{{premium1yr}}</span>
-        <!-- <input type="hidden" [(ngModel)]=""> -->
-        <button class="btn btn-primary" (click)="select1yr()">Select this plan</button>
-      </div>
+      <button class="btn btn-primary" (click)="select1yr()">
+        Select this plan
+      </button>
     </div>
+  </div>
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">premium 1 year third-party</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span>price:{{premium1yrThirdParty}}</span>
-        <button class="btn btn-primary" (click)=" select1yrThirdParty()">Select this plan</button>
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">1 Year Third-Party Plan</h5>
 
-      </div>
+      <p class="card-text">
+        Third party insurance policy provides coverage from all the third party
+        liabilities which may arise during an accident or mishap such as
+        involving your car.
+      </p>
+
+      <span>Price ₹ {{ premium1yrThirdParty }} (including GST)</span>
+
+      <button class="btn btn-primary" (click)="select1yrThirdParty()">
+        Select this plan
+      </button>
     </div>
+  </div>
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">premium 3 year Comprehensive Price</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span>price:{{premium3yr}}</span>
-        <button class="btn btn-primary" (click)="select3yr()">Select this plan</button>
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">3 Year Comprehensive Plan</h5>
 
-      </div>
+      <p class="card-text">
+        Although, you are required to pay more premium amounts, you are paying
+        it for three years altogether, which means you do not have to worry
+        about renewing your car insurance every year.
+      </p>
+
+      <span>Price ₹ {{ premium3yr }} (including GST)</span>
+
+      <button class="btn btn-primary" (click)="select3yr()">
+        Select this plan
+      </button>
     </div>
+  </div>
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">premium 3 year third-party</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <span>price:{{premium3yrThirdParty}}</span>
-        <button class="btn btn-primary" (click)="select3yrThirdParty()">Select this plan</button>
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">3 Year Third-Party Plan</h5>
 
+      <p class="card-text">
+        Although, you are required to pay more premium amounts, you are paying
+        it for three years altogether, which means you do not have to worry
+        about renewing your car insurance every year.
+      </p>
 
-      </div>
+      <span>Price ₹ {{ premium3yrThirdParty }} (including GST)</span>
+
+      <button class="btn btn-primary" (click)="select3yrThirdParty()">
+        Select this plan
+      </button>
     </div>
-<br>
+  </div>
 
-
-
-
+  <br />
 </div>
-<hr>
+
+<hr />

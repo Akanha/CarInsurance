@@ -119,6 +119,20 @@
       "policyNo": "CRI21292",
       "regNo": "OD02S9052",
       "claimStatus": "unclaimed"
+    },
+    {
+      "id": 119,
+      "email": "ashirvadmishra17@gmail.com",
+      "policyNo": "CRI34327",
+      "regNo": "KA01LS1243",
+      "claimStatus": "unclaimed"
+    },
+    {
+      "id": 120,
+      "email": "ashirvadmishra17@gmail.com",
+      "policyNo": "CRI61482",
+      "regNo": "OD02SA1431",
+      "claimStatus": "unclaimed"
     }
   ]
 }

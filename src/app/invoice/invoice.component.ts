@@ -9,6 +9,7 @@ export class InvoiceComponent {
   email:any=localStorage.getItem("email")
   policy:any=localStorage.getItem("policy")
   regNo:any=localStorage.getItem("regNo")
+  price:any=localStorage.getItem("value")+"₹"
 
 }
 
