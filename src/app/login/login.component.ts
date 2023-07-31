@@ -23,10 +23,12 @@ export class LoginComponent {
       console.log(typeof(this.fetched));
 
       if(this.cred.email == this.fetched.email && this.cred.password==this.fetched.password){
+        if(data.length>0){
         console.log("aagaya")
         this.router.navigate(['/dashboard'])
         alert("Successfully loggedin")
        }
+      }
        else{
         alert("Invalid details")
         this.router.navigate(["/login"])

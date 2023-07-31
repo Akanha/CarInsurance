@@ -73,66 +73,11 @@
     },
     {
       "id": 112,
-      "email": "test@gmail.com",
+      "email": "ten@gmail.com",
       "policyNo": "CRI0002",
       "regNo": "OD02S9052",
       "claimStatus": "filed"
-    },
-    {
-      "id": 113,
-      "email": "ashirvadmishra17@gmail.com",
-      "policyNo": "CRI0003",
-      "regNo": "KA01LS1243",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 114,
-      "email": "ten@gmail.com",
-      "policyNo": "CRI6933",
-      "regNo": "AP12AB1234",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 115,
-      "email": "ashirvadmishra17@gmail.com",
-      "policyNo": "CRI90080",
-      "regNo": "OD02SA1431",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 116,
-      "email": "test@gmail.com",
-      "policyNo": "CRI76308",
-      "regNo": "OD02S9052",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 117,
-      "email": "test@gmail.com",
-      "policyNo": "CRI53876",
-      "regNo": "OD02S9052",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 118,
-      "email": "ten@gmail.com",
-      "policyNo": "CRI21292",
-      "regNo": "OD02S9052",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 119,
-      "email": "ashirvadmishra17@gmail.com",
-      "policyNo": "CRI34327",
-      "regNo": "KA01LS1243",
-      "claimStatus": "unclaimed"
-    },
-    {
-      "id": 120,
-      "email": "ashirvadmishra17@gmail.com",
-      "policyNo": "CRI61482",
-      "regNo": "OD02SA1431",
-      "claimStatus": "unclaimed"
     }
+
   ]
 }

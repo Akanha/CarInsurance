@@ -17,6 +17,7 @@ export class LoginPremiumComponent {
 
   authenticate(){
    this.service.validate(this.cred).then(resp => resp.subscribe((data) => {
+    if(data.length>0){
     this.fetched = data[0];
 
       localStorage.setItem("email",this.cred.email)
@@ -26,6 +27,7 @@ export class LoginPremiumComponent {
         this.router.navigate(['/payment'])
         alert("Successfully loggedin")
        }
+      }
        else{
         alert("Invalid details")
         this.router.navigate(["/login"])
