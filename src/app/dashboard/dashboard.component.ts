@@ -12,7 +12,9 @@ export class DashboardComponent {
   details:Policy[]=[]
   constructor(private service:AuthService,private router:Router){}
 
-
+  message(){
+    alert("Filed claim wait for approval")
+  }
 
   ngOnInit(){
     this.service.list().subscribe(d => this.details=d)

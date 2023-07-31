@@ -6,6 +6,7 @@
     <th>Car Regd No</th>
     <th>Policy No</th>
     <th>Claim Status</th>
+    <th>Actions</th>
   </tr>
   </thead>
   <tbody>
@@ -14,6 +15,9 @@
       <td>{{d.regNo}}</td>
       <td>{{d.policyNo}}</td>
       <td>{{d.claimStatus}}</td>
+      <td>
+        <button class="btn btn-info" (click)="message()">file claim</button>
+      </td>
 
     </tr>
   </tbody>

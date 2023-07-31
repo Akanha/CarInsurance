@@ -91,6 +91,13 @@
       "policyNo": "CRI6933",
       "regNo": "AP12AB1234",
       "claimStatus": "not-filed"
+    },
+    {
+      "id": 115,
+      "email": "ashirvadmishra17@gmail.com",
+      "policyNo": "CRI90080",
+      "regNo": "OD02SA1431",
+      "claimStatus": "not-filed"
     }
   ]
 }

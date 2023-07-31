@@ -1,1 +1,21 @@
-<p>admin works!</p>
+<form (ngSubmit)="login()">
+
+  <fieldset>
+
+  <legend>Admin Login</legend>
+
+  <label >Email</label>
+
+  <input type="text" name="email" [(ngModel)]="email" class="form-control"><br>
+
+  <label >password</label>
+
+  <input type="password" name="password" [(ngModel)]="password" class="form-control"/><br>
+
+  </fieldset>
+
+
+
+  <button class="btn btn-primary" >Admin Login</button>
+
+</form>

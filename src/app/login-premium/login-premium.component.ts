@@ -22,7 +22,7 @@ export class LoginPremiumComponent {
       console.log(typeof(this.fetched));
        if(this.cred.email == this.fetched.email && this.cred.password==this.fetched.password){
         console.log("aagaya")
-        this.router.navigate(['/premiumActual'])
+        this.router.navigate(['/payment'])
         alert("Successfully loggedin")
        }
        else{

@@ -7,8 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { PremiumComponent } from './premium/premium.component';
 import { LoginPremiumComponent } from './login-premium/login-premium.component';
-import { PremiumActualComponent } from './premium-actual/premium-actual.component';
 import { PaymentComponent } from './payment/payment.component';
+import { AdminComponent } from './admin/admin.component';
+import { ApproveComponent } from './approve/approve.component';
 
 const routes: Routes = [
   {path:"list",component:ListComponent,children:[
@@ -18,9 +19,9 @@ const routes: Routes = [
   {path:"home",component:HomeComponent},
   {path:"signup",component:SignupComponent},
   {path:"loginPremium",component:LoginPremiumComponent},
-  {path:"premiumActual",component:PremiumActualComponent},
   {path:"payment",component:PaymentComponent},
-
+  {path:"admin",component:AdminComponent},
+  {path:"approve",component:ApproveComponent},
   {path:"**",redirectTo:"/home", pathMatch:"full"}
 ];
 

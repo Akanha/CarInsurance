@@ -11,7 +11,7 @@ import { Policy } from '../policy.model';
 export class PaymentComponent {
   setpolicy:Policy=new Policy()
   constructor(private service:CommonService){}
-  value=localStorage.getItem("premium")
+  value=localStorage.getItem("value")
   PolicyNo = "CRI"
   actual:string=""
   policyGenerate(){

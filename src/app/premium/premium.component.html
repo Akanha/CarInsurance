@@ -1,43 +1,52 @@
-<span style="color:tomato" ></span>
 
-    <form (ngSubmit) = "premiumCalc()" class = "was-validated" #flog = ngForm>
+    <div style="display: flex; flex-direction: row;">
 
-    <!-- <select>Plan Type</select> -->
 
-<select id="insurance_type" name="type" [(ngModel)]="type">
 
-  <option [value]=1 >1 Year Comprehensive</option>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">1 year Comprehensive Price</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <span>price :{{premium1yr}}</span>
+        <!-- <input type="hidden" [(ngModel)]=""> -->
+        <button class="btn btn-primary" (click)="select1yr()">Select this plan</button>
+      </div>
+    </div>
 
-  <option [value]=11 >1 Year Third Party</option>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">premium 1 year third-party</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <span>price:{{premium1yrThirdParty}}</span>
+        <button class="btn btn-primary" (click)=" select1yrThirdParty()">Select this plan</button>
 
-  <option [value]=3>3 Year Comprehensive</option>
+      </div>
+    </div>
 
-</select>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">premium 3 year Comprehensive Price</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <span>price:{{premium3yr}}</span>
+        <button class="btn btn-primary" (click)="select3yr()">Select this plan</button>
 
-<label >Premium Price</label>
+      </div>
+    </div>
 
-<span>{{premium}}</span>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">premium 3 year third-party</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <span>price:{{premium3yrThirdParty}}</span>
+        <button class="btn btn-primary" (click)="select3yrThirdParty()">Select this plan</button>
 
-    <!-- <input type="text" name = "username" [(ngModel)]="cred.username" #uname = ngModel class = "form-control"  required pattern="[A-Za-z]{4,}"> <br>
 
-    <div class = "invalid-feedback" *ngIf = "uname.dirty && uname.invalid">Username cannot be empty or invalid</div>
+      </div>
+    </div>
+<br>
 
-    <label>Password</label>
 
-    <input type="password" name = "password" [(ngModel)]="cred.password" #passwd = ngModel class = "form-control"required pattern="[A-Za-z0-9]{4,}"><br>
 
-    <div class = "invalid-feedback" *ngIf="passwd.dirty && passwd.invalid"> Password cannot be empty or invalid</div>
 
-    <label>Role</label>
-
-    <select name = "role" [(ngModel)]="cred.role" class = "form-control" required>
-
-        <option *ngFor = "let r of roles" [value] = "r">{{r}}</option>
-
-    </select> <br> -->
-
-    <button type="submit" class="btn btn-primary">Get Price</button>
-
-</form>
-<button class="btn btn-success" (click)="login()">Login to Pay Premium</button>
+</div>
 <hr>
