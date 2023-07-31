@@ -14,6 +14,7 @@ import { PremiumComponent } from './premium/premium.component';
 import { LoginPremiumComponent } from './login-premium/login-premium.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ApproveComponent } from './approve/approve.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ApproveComponent } from './approve/approve.component';
     PremiumComponent,
     LoginPremiumComponent,
     PaymentComponent,
-    ApproveComponent
+    ApproveComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,

@@ -62,8 +62,8 @@ export class PremiumComponent {
 
           this.premium1yr = (2094+2094*0.18)*12;
           this.premium3yr = (2094+2094*0.18)*36;
-          this.premium1yrThirdParty = (2094+2094*0.18)*12;
-          this.premium3yrThirdParty = (2094+2094*0.18)*36;
+          this.premium1yrThirdParty = (2094+2094*0.18)*6;
+          this.premium3yrThirdParty = (2094+2094*0.18)*18;
 
         }
 
@@ -71,8 +71,8 @@ export class PremiumComponent {
 
           this.premium1yr = (3416+3416*0.18)*12;
           this.premium3yr = (3416+3416*0.18)*36;
-          this.premium3yrThirdParty = (3416+3416*0.18)*36;
-          this.premium1yrThirdParty = (3416+3416*0.18)*12;
+          this.premium3yrThirdParty = (3416+3416*0.18)*18;
+          this.premium1yrThirdParty = (3416+3416*0.18)*6;
 
 
         }
@@ -81,8 +81,8 @@ export class PremiumComponent {
 
           this.premium1yr = (7897+7897*0.18)*12;
           this.premium3yr = (7897+7897*0.18)*36;
-          this.premium1yrThirdParty=(7897+7897*0.18)*12;
-          this.premium3yrThirdParty = (7897+7897*0.18)*12;
+          this.premium1yrThirdParty=(7897+7897*0.18)*6;
+          this.premium3yrThirdParty = (7897+7897*0.18)*18;
 
         }
 

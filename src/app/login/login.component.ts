@@ -21,7 +21,8 @@ export class LoginComponent {
       this.fetched = data[0];
       localStorage.setItem("email",this.cred.email)
       console.log(typeof(this.fetched));
-       if(this.cred.email == this.fetched.email && this.cred.password==this.fetched.password){
+
+      if(this.cred.email == this.fetched.email && this.cred.password==this.fetched.password){
         console.log("aagaya")
         this.router.navigate(['/dashboard'])
         alert("Successfully loggedin")

@@ -10,6 +10,7 @@ import { LoginPremiumComponent } from './login-premium/login-premium.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AdminComponent } from './admin/admin.component';
 import { ApproveComponent } from './approve/approve.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 const routes: Routes = [
   {path:"list",component:ListComponent,children:[
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:"payment",component:PaymentComponent},
   {path:"admin",component:AdminComponent},
   {path:"approve",component:ApproveComponent},
+  {path:"invoice",component:InvoiceComponent},
   {path:"**",redirectTo:"/home", pathMatch:"full"}
 ];
 

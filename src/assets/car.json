@@ -98,6 +98,27 @@
       "policyNo": "CRI90080",
       "regNo": "OD02SA1431",
       "claimStatus": "unclaimed"
+    },
+    {
+      "id": 116,
+      "email": "test@gmail.com",
+      "policyNo": "CRI76308",
+      "regNo": "OD02S9052",
+      "claimStatus": "unclaimed"
+    },
+    {
+      "id": 117,
+      "email": "test@gmail.com",
+      "policyNo": "CRI53876",
+      "regNo": "OD02S9052",
+      "claimStatus": "unclaimed"
+    },
+    {
+      "id": 118,
+      "email": "ten@gmail.com",
+      "policyNo": "CRI21292",
+      "regNo": "OD02S9052",
+      "claimStatus": "unclaimed"
     }
   ]
 }

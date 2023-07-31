@@ -17,10 +17,10 @@ export class CommonService {
 
   policy(details:Policy){
     this.http.post(CommonService.baseUrl+"/policy/",details).subscribe(data=>data=details)
-    this.router.navigate(['/dashboard'])
+    this.router.navigate(['/invoice'])
   }
   policyAdmin(){
     return this.http.get<Policy[]>(CommonService.baseUrl+"/policy")
-    // this.router.navigate(['/dashboard'])
+
   }
 }
