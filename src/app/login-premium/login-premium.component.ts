@@ -29,11 +29,7 @@ export class LoginPremiumComponent {
        }
       }
        else{
-<<<<<<< HEAD
         alert("Login Unseccessful")
-=======
-        alert("Invalid details")
->>>>>>> 0da4df7b6d5b8f1e6719c35854304c598a280ee9
         this.router.navigate(["/loginPremium"])
         console.log("nahi aya")
        }
