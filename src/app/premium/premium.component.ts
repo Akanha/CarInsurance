@@ -67,7 +67,7 @@ export class PremiumComponent {
 
         }
 
-        else if(this.premiums.cc>=1000 || this.premiums.cc<=1500){
+        else if(this.premiums.cc>=1000 && this.premiums.cc<=1500){
 
           this.premium1yr = (3416+3416*0.18)*12;
           this.premium3yr = (3416+3416*0.18)*36;
@@ -79,10 +79,15 @@ export class PremiumComponent {
 
         else{
 
-          this.premium1yr = (7897+7897*0.18)*12;
-          this.premium3yr = (7897+7897*0.18)*36;
-          this.premium1yrThirdParty=(7897+7897*0.18)*6;
-          this.premium3yrThirdParty = (7897+7897*0.18)*18;
+          this.premium1yr = parseFloat(((7897 + 7897 * 0.18) * 12).toFixed(2));
+
+          this.premium3yr = parseFloat(((7897+7897*0.18)*36).toFixed(2));
+
+          this.premium1yrThirdParty = parseFloat(((7897+7897*0.18)*6).toFixed(2));
+
+          this.premium3yrThirdParty = parseFloat(((7897+7897*0.18)*18).toFixed(2));
+
+ 
 
         }
 

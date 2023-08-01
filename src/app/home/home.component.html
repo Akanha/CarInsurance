@@ -1,6 +1,6 @@
-<nav style="background-color: gray;">
+<!-- <nav style="background-color: gray;">
   <a [routerLink]="['/login']" class="bg-warning btn" style="float: right; margin-left: 2px;" >Login / view policy</a>
-  <!-- <a [routerLink]="['/claim']" class="bg-warning btn " style="float: right;">claim</a> -->
+  <a [routerLink]="['/claim']" class="bg-warning btn " style="float: right;">claim</a>
   <h2>Ca₹it</h2>
 </nav>
 
@@ -14,4 +14,166 @@
   </fieldset>
   <button class="btn btn-warning">Get Competitive Price></button>
 </form>
+</div> -->
+
+
+
+
+<!-- <section class="vh-50">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem; background-color: #997950;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="../assets/Car-insurance.jpg" alt="login form" class="img-fluid"
+                style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form (ngSubmit)="next()" class="was-validated">
+
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <i class="fas fa-cubes fa-2x me-3"></i>
+                    <span class="h1 fw-bold mb-0" style="color:azure;">Just Ca₹It</span>
+                  </div>
+
+
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example17">Registration Number </label>
+                    <input type="text" name="regNo" [(ngModel)]="reg.regNo" class="form-control"
+                      placeholder="Ex: OD02S9052">
+
+
+                  </div>
+
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-warning"
+                      style="background-color: #644318; border-left-color: #644318; border-right-color: #644318; border-top-color: #644318; border-bottom: #644318;">Get
+                      Price</button>
+                  </div>
+
+
+                  <a href="#!" class="small text-muted">Terms of use.</a>
+                  <a href="#!" class="small text-muted">Privacy policy</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br> -->
+
+
+<!-- <section style="background-color: #997950; ">
+  <h1 align="center"><em>Just Ca₹It</em></h1>
+</section> -->
+
+<div style="display: flex; flex-direction: row;" >
+  <div align="left;">
+    <img src="../assets/cargif.webp"></div>
+   
+<div class="card" align="center" style="background-color: teal ;">
+<div class="card-body" >
+  <h3 style="color: azure;"><b>Get Competitive Quote Here</b></h3>
+<form (ngSubmit)="next()" class="was-validated" >
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label" align="left"><b><i>Registration Number</i></b></label>
+    <input type="text" name="regNo" [(ngModel)]="reg.regNo" class="form-control" placeholder="Ex: OD02S9052">
+    <div id="emailHelp" class="form-text">We'll never share your Registration Number with anyone else.</div>
 </div>
+   
+  <button class="btn btn-warning" style="background-color: black; color: azure; border-color: black;">Get Competitive Price</button><br><br><br>
+  <p>Or Login from here to know Your details </p>
+  <button type="submit" class="btn btn-primary btn-block mb-4" style="background-color:black; color: azure; border-color: black;" [routerLink]="['/login']">
+    Login
+  </button>
+</form></div>
+</div>
+<div align="right;">
+  <img src="../assets/cargif.webp"></div>
+</div><br>
+
+<section >
+  <h1 align=" center" style="color: black;"><em>What We Cover!</em></h1><br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="../assets/wwc4.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title" style="color: teal;">Third-party Liability Policy</h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="../assets/wwc4.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title" style="color: teal;">Comprehensive Insurance Policy</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="../assets/wwc4.jpg" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title" style="color: teal;">Standalone Own-damage Insurance policy</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <br><br>
+  <section>
+    <h1 align=" center" style="color: black; "><em>Know Your Policy!</em></h1><br>
+    <div style="display: flex; flex-direction: row;">
+      <div align="left">
+        <h2 style="color: teal;"><i>Third Party</i></h2>
+        <p>Third-party insurance offers protection against damages to the third-party by the insured vehicle.
+          It covers physical injuries, damages to the vehicle, damage to the property, and death. Exclusions.
+          Third-party insurance does not provide any compensation,
+          if: The accident was caused due to drunken driving.</p>
+      </div><br>
+      <div align="left">
+        <h2 style="color: teal;"><i>Comprehensive</i></h2>
+        <p>comprehensive car insurance is a combination of third party insurance and own damage insurance.
+          This car policy provides comprehensive coverage against third party liabilities and loss
+          or damages caused to the insured car due to accidents, vandalism, fire, theft, manmade
+          and natural calamities.</p>
+      </div><br>
+    </div>
+  </section>
+
+
+  <br>
+  <section>
+    <h1 align="center"> <em>*T&C Apply </em></h1><br>
+    <h2 style="color: teal;"><i>Car Insurance T&C</i></h2>
+
+    <p>*Save up to 75% is valid on Car Own Damage premium only. The discount varies basis vehicle specifications, No
+      Claim Bonus discount and Geography of the vehicle to be insured.</p>
+
+    <p>**The premium of Rs. 2094 is for vehicle with engine cubic capacity less than 1000 CC and as per the notification
+      issued by IRDAI for the financial year 2022-2023, the premium rates that apply to Motor Third Party Liability
+      Insurance for Private Cars effective from 1st June 2022</p>
+
+
+
+    <p> The OD claim settlement ratio for Private car insurance is 98% for FY 21-22.</p>
+
+    <p><i>For further details, please refer to the information provided in the product brochure.</i></p>
+
+  </section><br>
+  <footer style="background-color: teal;">
+    <h1 style="color: azure;" >About Us!</h1><br>
+    <p style="color: azure;">Just Ca₹It (formerly known as carIt ) - Registered Office Address - 4 to 6 floors, Alchemy
+      Heights (AH One), Narveer Tanaji Wadi, City Survey No.1786, Shivaji Nagar, Pune-987005, Maharashtra | Corporate
+      Office Address - Koramangala , 8th Block, Bengaluru-560095, Karnataka | Trade logo of Just Ca₹It displayed above
+      belongs to Just Ca₹It lnfoworks Services Private Limited and is provided and used by Just Ca₹It under license.</p>
+  </footer>

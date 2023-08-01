@@ -25,12 +25,12 @@ export class LoginPremiumComponent {
        if(this.cred.email == this.fetched.email && this.cred.password==this.fetched.password){
         console.log("aagaya")
         this.router.navigate(['/payment'])
-        alert("Successfully loggedin")
+        alert("Your Login was Successful ")
        }
       }
        else{
-        alert("Invalid details")
-        this.router.navigate(["/login"])
+        alert("Login Unseccessful")
+        this.router.navigate(["/loginPremium"])
         console.log("nahi aya")
        }
   }))

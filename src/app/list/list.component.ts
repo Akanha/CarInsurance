@@ -11,11 +11,13 @@ import { Router } from '@angular/router';
 export class ListComponent {
   car:Car=new Car()
   constructor(private service:CarService,private route:Router){}
+  src:string=""
 
 
   ngOnInit():void{
     this.service.list().subscribe(d=> {
       this.car=d[0]
+      this.src=this.car.src
       // console.log(this.car)
     })
 

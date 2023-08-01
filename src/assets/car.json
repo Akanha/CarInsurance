@@ -7,7 +7,8 @@
       "regNo": "KA01LS1243",
       "dop": "12/12/2022",
       "price": 10000000,
-      "cc": 2300
+      "cc": 2300,
+      "src":"../../assets/cars/sclass.jpg"
     },
     {
       "id": 12,
@@ -16,16 +17,20 @@
       "regNo": "KA01AB1711",
       "dop": "1/8/2021",
       "price": 6000000,
-      "cc": 3000
+      "cc": 3000,
+      "src":"../../assets/cars/m3.jpg"
+
     },
     {
       "id": 13,
       "model": "Dzire",
-      "brand": "Suzuki",
+      "brand": "Maruti Suzuki",
       "regNo": "OD02S9052",
       "dop": "12/12/2022",
       "price": 800000,
-      "cc": 900
+      "cc": 900,
+      "src":"../../assets/cars/dzire.jpg"
+
     },
     {
       "id": 14,
@@ -34,7 +39,9 @@
       "regNo": "AP12AB1234",
       "dop": "12/08/2020",
       "price": 80000000,
-      "cc": 4500
+      "cc": 4500,
+      "src":"../../assets/cars/ghost.jpg"
+
     },
     {
       "id": 15,
@@ -43,7 +50,42 @@
       "regNo": "OD02SA1431",
       "dop": "10/02/2023",
       "price": 1400000,
-      "cc": 900
+      "cc": 900,
+      "src":"../../assets/cars/nexon.jpg"
+
+    },
+    {
+      "id": 16,
+      "model": "Etios",
+      "brand": "Toyota",
+      "regNo": "UP32AB1111",
+      "dop": "18/06/2022",
+      "price": 900000,
+      "cc": 1500,
+      "src":"../../assets/cars/etios.jpg"
+
+    },
+    {
+      "id": 17,
+      "model": "K10",
+      "brand": "Maruti Suzuki",
+      "regNo": "UP32GC6952",
+      "dop": "25/3/2021",
+      "price": 500000,
+      "cc": 600,
+      "src":"../../assets/cars/k10.jpg"
+
+    },
+    {
+      "id": 18,
+      "model": "Baleno",
+      "brand": "Maruti Suzuki",
+      "regNo": "UP32AA1111",
+      "dop": "10/8/2022",
+      "price": 800000,
+      "cc": 850,
+      "src":"../../assets/cars/baleno.jpg"
+
     }
   ],
   "user": [
@@ -61,6 +103,26 @@
       "id": 3,
       "email": "ashirvadmishra17@gmail.com",
       "password": "Aka1710"
+    },
+    {
+      "id": 4,
+      "email": "pratyush@gmail.com",
+      "password": "pratyush"
+    },
+    {
+      "id": 5,
+      "email": "khushi@gmail.com",
+      "password": "khushi"
+    },
+    {
+      "id": 6,
+      "email": "xyz@gmail.com",
+      "password": "xyza"
+    },
+    {
+      "id": 7,
+      "email": "dummy@gmail.com",
+      "password": "dummy"
     }
   ],
   "policy": [
@@ -69,15 +131,35 @@
       "email": "test@gmail.com",
       "policyNo": "CRI0001",
       "regNo": "KA01AB1711",
-      "claimStatus": "claimed"
+      "claimStatus": "Claimed"
     },
     {
       "id": 112,
       "email": "ten@gmail.com",
       "policyNo": "CRI0002",
       "regNo": "OD02S9052",
-      "claimStatus": "filed"
+      "claimStatus": "Claimed"
+    },
+    {
+      "id": 113,
+      "email": "xyz@gmail.com",
+      "policyNo": "CRI71073",
+      "regNo": "UP32GC6952",
+      "claimStatus": "Claimed"
+    },
+    {
+      "id": 114,
+      "email": "dummy@gmail.com",
+      "policyNo": "CRI10622",
+      "regNo": "UP32AB1111",
+      "claimStatus": "Denied"
+    },
+    {
+      "id": 115,
+      "email": "khushi@gmail.com",
+      "policyNo": "CRI12308",
+      "regNo": "AP12AB1234",
+      "claimStatus": "Unclaimed"
     }
-
   ]
 }

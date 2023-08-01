@@ -1,13 +1,58 @@
-<form (ngSubmit)="authenticate()" class="was-validated">
-  <fieldset>
-  <legend>Login/Signup</legend>
-  <label >Email</label>
-  <input type="text" name="email" [(ngModel)]="cred.email" class="form-control"><br>
+<section class="">
+  
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: white">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" >
+          <h1 class="my-5 display-3 fw-bold ls-tight" style="color: teal;">
+            Just Ca₹It </h1><br/>
+            <div style="background-image: url('../assets/yikrqEdET (1).gif');">
+            <h2>For</h2><h2 style="text-decoration: line-through;">your</h2><h2>OUR</h2><h2 >Precious Carzzz</h2>
+        
+          <p style="color: hsl(217, 10%, 50.8%)" >
+            We understand how important a car can be , from Comfort to Class a Car is the one that always gets considered . Then why having even a scrach on that ? Sounds Exhausting ? WORRY NOT FELLAS!!! We got you coverd . Have faith in us and just Car It :)
+          </p></div>
+        </div>
 
-  <label >password</label>
-  <input type="password" name="password" [(ngModel)]="cred.password" class="form-control"/><br>
-  </fieldset>
+        <div class="col-lg-6 mb-5 mb-lg-0" style="background-color: rgba(0,128,128 , 0.4);">
+          <div class="card" style="background-color: rgba(0,128,128 , 0.4);">
+            <div class="card-body py-5 px-md-5" style="background-color: rgba(0,128,128 , 0.4);">
+              <form (ngSubmit)="authenticate()" class="was-validated">
 
-  <button class="btn btn-primary">Login to pay premium</button>
-</form>
-<span>new user?</span> <a [routerLink]="['/signup']">sign up</a>
+                
+                
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3">Email address</label>
+                  <input type="text" name="email" [(ngModel)]="cred.email" class="form-control"><br>
+
+                </div>
+
+                
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4">Password</label>
+                  <input type="password" name="password" [(ngModel)]="cred.password" class="form-control"/><br>
+
+
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block mb-4" style="background-color:black; color: azure; border-color: black;">
+                  Login to Pay
+                </button> <br>  
+              </form>
+              <span>Are you a new User?</span><br>
+              <span>Sign-Up with us Now!</span> <br><button type="submit" class="btn btn-primary btn-block mb-4" [routerLink]="['/signup']" style="background-color:black; color: azure; border-color: black;">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="footer" style="background-color: teal;">
+  <h1 style="color: azure;" >About Us!</h1><br>
+  <p style="color: azure;">Just Ca₹It (formerly known as carIt General Insurance Ltd.) - Registered Office Address - 4 to 6 floors, Alchemy
+    Heights (AH One), Narveer Tanaji Wadi, City Survey No.1786, Shivaji Nagar, Pune-987005, Maharashtra | Corporate
+    Office Address - Koramangala , 8th Block, Bengaluru-560095, Karnataka | Trade logo of Just Ca₹It displayed above
+    belongs to Just Ca₹It lnfoworks Services Private Limited and is provided and used by Just Ca₹It under license.</p>
+</div>
+
