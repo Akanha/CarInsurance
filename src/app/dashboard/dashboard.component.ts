@@ -14,11 +14,11 @@ export class DashboardComponent {
   constructor(private service:AuthService,private router:Router,private http:HttpClient){}
 
   update(id:number,details:Policy){
-    if(details.claimStatus=="claimed"){
+    if(details.claimStatus=="Claimed"){
       alert("already claimed")
     }
     else{
-    details.claimStatus="filed";
+    details.claimStatus="Filed Successfully";
     this.service.update(id,details)
     }
   }

@@ -13,7 +13,11 @@ export class SignupComponent {
   constructor(private service:AuthService,private router:Router){}
   signup(){
     this.service.signUp(this.cred);
+<<<<<<< HEAD
+    alert("User Created Successfully")
+=======
     alert("user created successfully")
+>>>>>>> 0da4df7b6d5b8f1e6719c35854304c598a280ee9
     this.router.navigate(['/home'])
     console.log("hello")
 

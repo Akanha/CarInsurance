@@ -13,12 +13,12 @@ export class ApproveComponent {
   // show:Policy=new Policy()
   constructor(private service1:CommonService, private service2:AuthService){}
   approve(id:number,data:Policy){
-    data.claimStatus="claimed"
+    data.claimStatus="Claimed"
     alert("Claim approved")
     this.service2.update(id,data);
   }
   deny(id:number,data:Policy){
-    data.claimStatus="denied"
+    data.claimStatus="Denied"
     this.service2.update(id,data);
   }
   ngOnInit(){

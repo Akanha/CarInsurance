@@ -1,5 +1,5 @@
 <form (ngSubmit)="policyGenerate()">
-  <h1 style="color: #997950;" class="head">Just Ca₹It</h1>
+  <h1 style="color: teal;" class="head"><b>Just Ca₹It</b></h1>
 
 
 
@@ -14,17 +14,13 @@
 
             <div class="col-50">
 
-              <h3 style="color: #997950;" >Billing Address</h3>
+              <h3 style="color: teal;" >Billing Address</h3>
 
-              <label for="email" style="color: #997950;"><i class="fa fa-envelope"></i> Email</label>
+              <label for="email" style="color: teal;"><i class="fa fa-envelope"></i> Email</label>
 
               <input type="text" id="email" name="email" placeholder="john@example.com">
 
-              <label for="adr" style="color: #997950;"><i class="fa fa-address-card-o"></i>Policy Number</label>
-
-              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-
-              <label for="city" style="color: #997950;"><i class="fa fa-institution"></i>Registering Number</label>
+              <label for="city" style="color: teal;"><i class="fa fa-institution"></i>Registration Number</label>
 
               <input type="text" id="city" name="city" placeholder="New York">
 
@@ -32,9 +28,9 @@
 
             <div class="col-50">
 
-              <h3 style="color: #997950;">Payment</h3>
+              <h3 style="color: teal;">Payment</h3>
 
-              <label for="fname" style="color: #997950;">Accepted Cards</label>
+              <label for="fname" style="color: teal;">Accepted Cards</label>
 
               <div class="icon-container">
 
@@ -48,15 +44,15 @@
 
               </div>
 
-              <label for="cname" style="color: #997950;">Name on Card</label>
+              <label for="cname" style="color: teal;">Name on Card</label>
 
               <input type="text" id="cname" name="cardname" placeholder="John More Doe">
 
-              <label for="ccnum" style="color: #997950;">Credit card number</label>
+              <label for="ccnum" style="color: teal;">Credit card number</label>
 
               <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
 
-              <label for="expmonth" style="color: #997950;">Exp Month</label>
+              <label for="expmonth" style="color: teal;">Exp Month</label>
 
               <input type="text" id="expmonth" name="expmonth" placeholder="September">
 
@@ -66,7 +62,7 @@
 
                 <div class="col-50">
 
-                  <label for="expyear" style="color: #997950;">Exp Year</label>
+                  <label for="expyear" style="color: teal;">Exp Year</label>
 
                   <input type="text" id="expyear" name="expyear" placeholder="2024">
 
@@ -74,7 +70,7 @@
 
                 <div class="col-50">
 
-                  <label for="cvv" style="color: #997950;">CVV</label>
+                  <label for="cvv" style="color: teal;">CVV</label>
 
                   <input type="text" id="cvv" name="cvv" placeholder="352">
 
@@ -88,14 +84,14 @@
 
           </div>
 
-          <label style="color: #997950;">
+          <label style="color:teal;">
 
             <input type="checkbox" checked="checked" name="sameadr" > Shipping address same as billing
 
           </label>
           <label >Pay Amount</label>
           <input type="text" value="{{value}}" readonly>
-          <button class="btn btn-info">Pay</button>
+          <button class="btn btn-info" style="background-color: teal;">Pay</button>
           </div>
       </div>
       </div>

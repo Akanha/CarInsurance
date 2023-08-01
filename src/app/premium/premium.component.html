@@ -1,5 +1,5 @@
 <div style="display: flex; flex-direction: row">
-  <div class="card" style="width: 18rem">
+  <div class="card" style="width: 18rem ; background-color: rgba(0,128,128,0.3);" >
     <div class="card-body">
       <h5 class="card-title">1 Year Comprehensive Plan</h5>
 
@@ -8,17 +8,18 @@
         that offers coverage for the third party as well as own damage.
       </p>
 
-      <span>Price ₹ {{ premium1yr }} (including GST)</span>
+      <span><b>Price ₹{{ premium1yr }} </b></span><br>
+      <span>(-inclusive of all the Taxes)</span>
 
       <!-- <input type="hidden" [(ngModel)]=""> -->
 
-      <button class="btn btn-primary" (click)="select1yr()">
-        Select this plan
+      <button class="btn btn-primary" (click)="select1yr()" style="background-color: teal;">
+        Buy Now
       </button>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem">
+  <div class="card" style="width: 18rem; background-color: rgba(0,128,128,0.3);">
     <div class="card-body">
       <h5 class="card-title">1 Year Third-Party Plan</h5>
 
@@ -28,15 +29,16 @@
         involving your car.
       </p>
 
-      <span>Price ₹ {{ premium1yrThirdParty }} (including GST)</span>
+      <span><b>Price ₹{{ premium1yrThirdParty }}</b></span><br>
+      <span>(-inclusive of all the Taxes)</span>
 
-      <button class="btn btn-primary" (click)="select1yrThirdParty()">
-        Select this plan
+      <button class="btn btn-primary" (click)="select1yrThirdParty()" style="background-color: teal;">
+        Buy Now
       </button>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem">
+  <div class="card" style="width: 18rem; background-color: rgba(0,128,128,0.3);">
     <div class="card-body">
       <h5 class="card-title">3 Year Comprehensive Plan</h5>
 
@@ -46,15 +48,16 @@
         about renewing your car insurance every year.
       </p>
 
-      <span>Price ₹ {{ premium3yr }} (including GST)</span>
+      <span><b>Price ₹{{ premium3yr }}</b></span><br>
+      <span>(-inclusive of all the Taxes)</span>
 
-      <button class="btn btn-primary" (click)="select3yr()">
-        Select this plan
+      <button class="btn btn-primary" (click)="select3yr()" style="background-color: teal;">
+        Buy Now
       </button>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem">
+  <div class="card" style="width: 18rem ;background-color: rgba(0,128,128,0.3);">
     <div class="card-body">
       <h5 class="card-title">3 Year Third-Party Plan</h5>
 
@@ -64,10 +67,11 @@
         about renewing your car insurance every year.
       </p>
 
-      <span>Price ₹ {{ premium3yrThirdParty }} (including GST)</span>
+      <span><b>Price ₹{{ premium3yrThirdParty }}</b></span><br>
+      <span>(-inclusive of all the Taxes)</span>
 
-      <button class="btn btn-primary" (click)="select3yrThirdParty()">
-        Select this plan
+      <button class="btn btn-primary" (click)="select3yrThirdParty()" style="background-color: teal;">
+        Buy Now
       </button>
     </div>
   </div>
