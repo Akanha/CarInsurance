@@ -138,6 +138,7 @@
       "email": "ten@gmail.com",
       "policyNo": "CRI0002",
       "regNo": "OD02S9052",
+<<<<<<< HEAD
       "claimStatus": "Claimed"
     },
     {
@@ -160,6 +161,16 @@
       "policyNo": "CRI12308",
       "regNo": "AP12AB1234",
       "claimStatus": "Unclaimed"
+=======
+      "claimStatus": "filed"
+    },
+    {
+      "id": 113,
+      "email": "ten@gmail.com",
+      "policyNo": "CRI43595",
+      "regNo": "OD02S9052",
+      "claimStatus": "unclaimed"
+>>>>>>> 0da4df7b6d5b8f1e6719c35854304c598a280ee9
     }
   ]
 }
