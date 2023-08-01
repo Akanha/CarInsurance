@@ -15,6 +15,7 @@ export class SignupComponent {
     this.service.signUp(this.cred);
     alert("user created successfully")
     this.router.navigate(['/home'])
+    console.log("hello")
 
   }
 }
