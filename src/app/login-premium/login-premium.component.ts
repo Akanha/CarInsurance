@@ -30,7 +30,7 @@ export class LoginPremiumComponent {
       }
        else{
         alert("Invalid details")
-        this.router.navigate(["/login"])
+        this.router.navigate(["/loginPremium"])
         console.log("nahi aya")
        }
   }))
